@@ -1,0 +1,57 @@
+﻿
+<div id="page-transitions">
+
+    <div class="page-preloader page-preloader-dark" ng-class="{true:'show-preloader'}[isLoading]">
+        <img class="page-preload" src="images/preload.gif">
+    </div>
+
+    <div class="landing-homepage">
+        <div class="landing-page landing-dark fadeIn show-containers">
+            <div class="landing-wrapper">
+                <div class="landing-header no-bottom">
+                    <a class="landing-header-logo" href="#">SideBars</a>
+                    <div class="landing-header-icons">
+                        <a class="bg-green-dark show-share-bottom" href="#"><i class="fa fa-share"></i></a>
+                        <a class="twitter-color" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="facebook-color" href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="content no-bottom"><div class="deco"></div></div>
+                <!-- Left Top Menu -->
+                <ul>
+                    <li ng-repeat="category in categories">
+                        <a ng-click='move(category.Id)'>
+                            <i class="fa" ng-class="getColors($index);"></i>
+                            <em>{{category.Category1}}</em>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="clear"></div>
+                <div class="content no-bottom"><div class="deco"></div></div>
+                <div class="landing-footer">
+                    <p class="center-text">Copyright 2015. All rights reserved.</p>
+                    <div class="landing-footer-icons">
+                        <a href="#" class="scale-hover facebook-color social-ball"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="scale-hover twitter-color social-ball"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="scale-hover google-color social-ball"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="scale-hover back-to-top bg-green-dark social-ball"><i class="fa fa-phone"></i></a>
+                        <a href="#" class="scale-hover show-share-bottom bg-magenta-dark social-ball"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-overlay"></div>
+            <div class="background"></div>
+        </div>
+    </div>
+</div>
+
+    <!--<ul>
+        <li ng-repeat="category in categories">
+            <a ng-click='move(category.Id)'>
+                <i class="fa" ng-class="getColors($index);"></i>
+                <em>{{category.Category1}}</em>
+            </a>
+        </li>
+    </ul>-->
